@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Ecommerce App",
+    "imageSrc": "projects/project.png",
+    "description": "Developed a full-stack e-commerce website using the MERN stack.",
+    "skills": ["React", "Express", "Node","Mongodb","Payment Gateway"]
+    
+  },
+  {
+    "title": "Jarvis:AI Virtual Assistant",
+    "imageSrc": "projects/project.png",
+    "description": "Jarvis is a personal virtual assistant built using JavaScript which give user voice command and generate the solution.",
+    "skills": ["JavaScript","AI"]
+    
+  },
+  {
+    "title": "Voting System App",
+    "imageSrc": "projects/project.png",
+    "description": "Developed a console-based voting system in C++ to facilitate electronic elections.Utilized file handling for data storage and management." ,
+    "skills": ["C++"]
+    
+  }
+]
