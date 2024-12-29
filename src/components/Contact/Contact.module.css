@@ -46,19 +46,76 @@
   letter-spacing: 1.5px;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 730px) {
   .container {
     flex-direction: column;
     gap: 20px;
+    padding: 40px 5%;
   }
 
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    /* Center-align text for better readability */
+  }
+
+  .text h2 {
+    font-size: 40px;
+    /* Reduce heading size for mobile */
+    letter-spacing: 2px;
+  }
+
+  .text p {
+    font-size: 20px;
+    /* Reduce paragraph size for mobile */
+    letter-spacing: 1px;
   }
 
   .links {
     align-items: center;
+    gap: 20px;
+  }
+
+  .link {
+    gap: 15px;
+    /* Reduce gap between link items */
+  }
+
+  .link a {
+    font-size: 15px;
+    /* Reduce link font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 80px;
+    /* Adjust spacing for smaller screens */
+    padding: 30px 5%;
+    /* Reduce padding */
+  }
+
+  .text h2 {
+    font-size: 20px;
+    /* Further reduce heading size */
+    letter-spacing: 1.5px;
+  }
+
+  .text p {
+    font-size: 12px;
+    /* Adjust paragraph size */
+  }
+
+  .links {
+    gap: 12px;
+    /* Reduce gap between links */
+  }
+
+  .link a {
+    font-size: 14px;
+    /* Smaller font size for links */
   }
 }

@@ -2,7 +2,7 @@
   {
     "title": "Ecommerce App",
     "imageSrc": "projects/project.png",
-    "description": "Developed a full-stack e-commerce website using the MERN stack.",
+    "description": "Developed a full-stack e-commerce website using the MERN stack which provides seamless online shopping experience.",
     "skills": ["React", "Express", "Node","Mongodb","Payment Gateway"]
     
   },

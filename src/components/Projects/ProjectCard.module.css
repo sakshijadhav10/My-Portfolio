@@ -3,29 +3,50 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 445px;
-  max-height: 600px;
+  height: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth animation */
+}
+
+.container:hover {
+  transform: translateY(-10px) scale(1.05);
+  /* Lift and scale effect */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  /* Add stronger shadow */
 }
 
 .image {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 26px;
+  transition: transform 0.3s ease;
+  /* Smooth animation for image */
+}
+
+.container:hover .image {
+  transform: scale(1.1);
+  /* Slight zoom effect on image */
 }
 
 .title {
   font-size: 25px;
   font-weight: 700;
   color: rgb(23, 220, 20);
+  text-align: center;
 }
 
 .description {
   margin-top: 6px;
   font-size: 25px;
   font-weight: 400;
+  text-align: center;
 }
 
 .skills {
@@ -36,6 +57,7 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  justify-content: center;
 }
 
 .skill {
@@ -44,13 +66,21 @@
   border-radius: 100px;
   background: var(--color-dark);
   padding: 2px 22px;
+  transition: background-color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.container:hover .skill {
+  background: var(--color-secondary);
+  /* Change background color on hover */
 }
 
 .links {
   width: 100%;
   margin-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
 }
 
 .link {
@@ -60,5 +90,55 @@
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  padding: 8px 22px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth animation */
+}
+
+.container:hover .link {
+  background: var(--color-secondary);
+  /* Change button color on hover */
+  transform: scale(1.1);
+  /* Slight enlarge effect */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    max-width: 100%;
+    height: auto;
+    /* Allow height to adjust for smaller screens */
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .skill {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
 }

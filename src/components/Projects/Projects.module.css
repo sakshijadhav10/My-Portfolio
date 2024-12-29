@@ -24,3 +24,44 @@
   gap: 15px;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    /* Reduce side margins on smaller screens */
+    margin-right: 5%;
+    margin-top: 50px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .title {
+    font-size: 28px;
+    /* Adjust font size for tablets */
+    letter-spacing: 1.5px;
+  }
+
+  .projects {
+    gap: 10px;
+    /* Reduce gap for better spacing on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+    /* Further adjust font size for mobile */
+    letter-spacing: 1.2px;
+  }
+
+  .projects {
+    flex-direction: column;
+    /* Stack projects vertically on very small screens */
+    gap: 8px;
+  }
+}
