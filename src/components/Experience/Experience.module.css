@@ -13,6 +13,8 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
+  /* Center-align for mobile */
 }
 
 .content {
@@ -54,6 +56,8 @@
   font-size: 25px;
   font-family: var(--font-roboto);
   font-weight: 500;
+  text-align: center;
+  /* Center-align skill text */
 }
 
 .history {
@@ -100,6 +104,7 @@
   margin-left: 17px;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 1030px) {
   .content {
     flex-direction: column;
@@ -116,5 +121,98 @@
   .history {
     width: 100%;
     gap: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 30px;
+    /* Reduce font size for smaller screens */
+    margin-bottom: 10px;
+    /* Add spacing */
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    /* Reduce gap for compact layout */
+  }
+
+  .skills {
+    width: 100%;
+    gap: 20px;
+    /* Adjust gap between skills */
+  }
+
+  .skill p {
+    font-size: 18px;
+    /* Adjust font size for mobile */
+  }
+
+  .history {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .historyItem {
+    flex-direction: column;
+    /* Stack content vertically */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .historyItem img {
+    width: 150px;
+    /* Reduce image size */
+  }
+
+  .historyItemDetails h3 {
+    font-size: 25px;
+    /* Adjust heading size */
+  }
+
+  .historyItemDetails p,
+  .historyItemDetails ul {
+    font-size: 18px;
+    /* Adjust text size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .skillImageContainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skillImageContainer img {
+    width: 60px;
+    /* Reduce skill image size */
+  }
+
+  .skill p {
+    font-size: 16px;
+    /* Adjust skill text size */
+  }
+
+  .historyItem img {
+    width: 120px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 20px;
+  }
+
+  .historyItemDetails p,
+  .historyItemDetails ul {
+    font-size: 16px;
   }
 }
